@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="icon" href="imgs/icon_Gallery.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheets/app.css">
+        <script src="https://kit.fontawesome.com/56406a3820.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    </head>
+    <body>
+
+        <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top">
+            <span class="navbar-brand mb-0 mx-2 mb-1"><img src="imgs/icon_Gallery.png" class="icon">Gallery</span>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Gallery <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/" method="GET" class="form-inline">
+                            <button type="submit" name="search" value="Portrait" class="nav-link">Portrait </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/" method="GET" class="form-inline">
+                            <button type="submit" name="search" value="Landscape" class="nav-link">Landscape</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <div class="h5">
+                        <a href="#"><i class="fab fa-instagram nav-link px-1"></i></a>
+                        <a href="#"><i class="fab fa-twitter nav-link pl-0 pr-1"></i></a>
+                        <a href=""><i class="far fa-envelope nav-link pl-0 pr-1"></i></a>
+                    </div>
+                </ul>
+            </div>
+        </nav>

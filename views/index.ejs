@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal">
+	<div class="modal-dialog" role="dialog">
+		<div class="modal-content">
+			<img src="/">
+		</div>
+	</div>
+</div>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+</div>
+
+<!-- Masonry Grid -->
+<section class="listing">
+	<div class="listing-grid">
+		<div id="grid-sizer">
+		</div>
+		<% images.forEach((item) => { %>
+			<div class="grid-item">
+				<a class="preview" href="#imageModal" data-toggle="modal">
+					<div class="card text-white">
+						<img src="<%= item.image %>">
+						<div class="card-img-overlay">
+							<h5 class="card-title"><%= item.name %></h5>
+							<p class="card-text"><%= item.description %></p>
+							<div class="card-img-overlay overlay-background">
+								<h5 class="card-title"><%= item.name %></h5>
+								<p class="card-text"><%= item.description %></p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		<% }) %>
+	</div>
+</section>
+
+	  <hr>
+
+<%- include("partials/footer") %>
